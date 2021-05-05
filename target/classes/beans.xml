@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+
+	<bean id = "login" class = "com.divergent.clinicmanagement.crud.Login"/>
+	<bean id = "doctor" class = "com.divergent.clinicmanagement.crud.Doctor"/>
+	<bean id = "labtest" class = "com.divergent.clinicmanagement.crud.LabTest"/>
+	<bean id = "patient" class = "com.divergent.clinicmanagement.crud.Patient"/>
+	<bean id = "admin" class = "com.divergent.clinicmanagement.crud.Admin"/>
+	<bean id = "drugs" class = "com.divergent.clinicmanagement.crud.Drugs"/>
+	<bean id = "clinic" class = "com.divergent.clinicmanagement.crud.ClinicManagement"/>
+    <bean id = "doctorOperate" class = "com.divergent.clinicmanagement.crud.DoctorOperate"/>
+   <bean id = "makeAppointment" class = "com.divergent.clinicmanagement.crud.MakeAppointment"/>
+    
+      
+    
+    <bean id = "doctorDao" class = "com.divergent.clinicmanagement.dao.DoctorDao"/>
+    <bean id = "doctoroperationDao" class = "com.divergent.clinicmanagement.dao.DoctorOperationDao"/>
+    <bean id = "drugsDao" class = "com.divergent.clinicmanagement.dao.DrugsDao"/>
+    <bean id = "labtestDao" class = "com.divergent.clinicmanagement.dao.LabTestDao"/>
+    <bean id = "loginDao" class = "com.divergent.clinicmanagement.dao.LoginDao"/>
+    <bean id = "makeappointmentDao" class = "com.divergent.clinicmanagement.dao.MakeAppointmentDao"/>
+    <bean id = "patientDao" class = "com.divergent.clinicmanagement.dao.PatientDao"/>
+    
+    <bean id = "connectionProvider" class = "com.divergent.clinicmanagement.database.ConnectionProvider"/>
+    <bean id = "insertUpdateDelete" class = "com.divergent.clinicmanagement.database.InsertUpdateDelete"/>
+    <bean id = "select" class = "com.divergent.clinicmanagement.database.Select"/>
+       
+</beans>
+ 
